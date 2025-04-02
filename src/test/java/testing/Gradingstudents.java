@@ -9,11 +9,11 @@ public class Gradingstudents {
         float[] avgOfMarks;
         char grade;
         avgOfMarks = new float[3];
-        float[] attendance = {68, 75, 90};
+        float[] attendance = {63, 75, 90};
 
         // calculating avg of marks
         for (int i = 0; i < avgOfMarks.length; i++) {
-            avgOfMarks[i] = avgOfstudent(marks, avgOfMarks, i);
+            avgOfMarks[i] = avgOfStudent(marks, avgOfMarks, i);
             //System.out.print(avgOfMarks[i]);
         }
         // Grade finding based on avg/attendance
@@ -38,7 +38,7 @@ public class Gradingstudents {
 
 // method for avg of marks
 
-    public static float avgOfstudent(float [][] marks , float [] avgOfMarks, int i) {
+    public static float avgOfStudent(float [][] marks , float [] avgOfMarks, int i) {
         float[] sumOfMarks;
 
         sumOfMarks = new float[3];
